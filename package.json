@@ -1,0 +1,42 @@
+{
+ "name": "Permatech",
+ "version": "1.0.0",
+ "description": "",
+ "main": "permatech_api.js",
+ "scripts": {
+  "start": "nodemon permatech_api.js",
+  "test": "mocha tests/models/ --reporter=spec --timeout 100000 --",
+  "test-coverage": "nyc --reporter=html npm run test",
+  "test-coverage-json": "nyc --reporter=json-summary npm run test-json"
+ },
+ "author": "",
+ "license": "ISC",
+ "dependencies": {
+  "body-parser": "^1.18.3",
+  "cls-hooked": "^4.2.2",
+  "cls-rtracer": "^1.4.0",
+  "cors": "^2.8.5",
+  "express": "^4.16.4",
+  "healthcheck_modules": "^1.0.14",
+  "is-empty": "^1.2.0",
+  "joi": "^14.3.1",
+  "moment": "^2.24.0",
+  "mongodb": "^3.4.0",
+  "multiparty": "^4.2.1",
+  "node-couchdb": "^1.3.0",
+  "os": "^0.1.1",
+  "pdfkit": "^0.9.0",
+  "redis": "^2.8.0",
+  "request": "^2.88.0",
+  "sinon": "^7.5.0",
+  "winston": "^3.3.3",
+  "winston-daily-rotate-file": "^4.4.2"
+ },
+ "devDependencies": {
+  "chai": "^4.1.2",
+  "chai-http": "^4.0.0",
+  "mocha": "^5.2.0",
+  "nodemon": "^1.19.1",
+  "nyc": "^15.1.0"
+ }
+}
